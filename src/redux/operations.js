@@ -2,7 +2,7 @@ import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { toast } from 'react-toastify';
 
-axios.defaults.baseURL = 'https://65fdf5edb2a18489b385a64e.mockapi.io';
+axios.defaults.baseURL = 'https://660001dcdf565f1a6145a1e4.mockapi.io';
 
 const ERROR_NOTIFY = `We're sorry ! We have some problems with the server`;
 
