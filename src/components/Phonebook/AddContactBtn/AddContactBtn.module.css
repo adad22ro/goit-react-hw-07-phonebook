@@ -1,0 +1,27 @@
+.submitBtn {
+  padding: 10px 20px;
+  align-self: center;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: rgba(134, 134, 134, 0.75) 2px 2px 5px 0px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.submitBtn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  background-color: #1100ff;
+  box-shadow: rgba(0, 0, 0, 0.75) 5px 5px 8px 0px;
+}
+
+.submitBtn:active {
+  opacity: 1;
+  transform: scale(1.1);
+  color: white;
+}

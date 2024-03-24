@@ -1,16 +1,25 @@
-export const App = () => {
+import Section from './Section/Section';
+import Phonebook from './Phonebook/Phonebook';
+import Contacts from './Contacts/Contacts';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchContacts } from '../redux/operations';
+import '../index.css';
+
+const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Section title="Phonebook">
+        <Phonebook />
+        <Contacts />
+      </Section>
+    </>
   );
 };
+
+export default App;
